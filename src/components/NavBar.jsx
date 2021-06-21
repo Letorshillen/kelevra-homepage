@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <header className="">
+    <header className="fixed top-0 right-0 left-0 bg-white">
       <div className="mx-6 my-5 flex justify-between items-center">
         <h1 className="logo uppercase text-xl leading-none">
           Sophie <br />
