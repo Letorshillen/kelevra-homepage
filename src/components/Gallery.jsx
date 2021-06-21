@@ -26,7 +26,11 @@ const Gallery = () => {
       .catch(console.error);
   }, []);
 
-  return <main></main>;
+  return (
+    <main>
+      <img src={galleryData.drawing_image.url} alt="" />
+    </main>
+  );
 };
 
 export default Gallery;

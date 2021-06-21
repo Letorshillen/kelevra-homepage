@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "studio"
+    "name": "Kelevra-Gallery"
   },
   "api": {
-    "projectId": "6em95i0a",
+    "projectId": "mifiu6aq",
     "dataset": "production"
   },
   "plugins": [
