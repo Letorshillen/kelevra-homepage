@@ -11,10 +11,26 @@ module.exports = {
           DEFAULT: "#FEB9FF",
         },
       },
+      gridTemplateColumns: {
+        gallery: "repeat(auto-fit, minmax(250px, 1fr))",
+      },
+      zIndex: {
+        "-1": "-1",
+      },
+      height: {
+        m: "60vh",
+        l: "80vh",
+      },
+      width: {
+        m: "60vw",
+        l: "80vw",
+      },
     },
   },
   variants: {
     extend: { backgroundImage: ["hover", "focus"] },
+    extend: { height: ["hover", "focus"] },
+    extend: { width: ["hover", "focus"] },
   },
   plugins: [],
 };
