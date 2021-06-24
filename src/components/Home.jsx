@@ -1,4 +1,5 @@
 import React from "react";
+import Scene from "./Scene";
 
 const Home = () => {
   return (
@@ -6,6 +7,9 @@ const Home = () => {
       <h1 className="font-h absolute transform -translate-x-2/4 -translate-y-2/4 top-2/4 left-2/4 text-8xl text-center">
         art für <br /> pokemaniacs
       </h1>
+      <div className="h-screen w-screen">
+        <Scene />
+      </div>
     </main>
   );
 };

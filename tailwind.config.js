@@ -29,8 +29,6 @@ module.exports = {
   },
   variants: {
     extend: { backgroundImage: ["hover", "focus"] },
-    extend: { height: ["hover", "focus"] },
-    extend: { width: ["hover", "focus"] },
   },
   plugins: [],
 };
