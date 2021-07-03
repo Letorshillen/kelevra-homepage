@@ -1,5 +1,5 @@
 import React from "react";
-import Scene from "./Scene";
+import Scene from "./threeScenes/SceneHero";
 
 const Home = () => {
   return (

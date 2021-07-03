@@ -1,7 +1,7 @@
 import React, { useRef, useState, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import glb from "../static/pokeball.glb";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import glb from "../../static/pokeball.glb";
+import { useGLTF, useAnimations, useProgress } from "@react-three/drei";
 
 const Model = (props) => {
   useFrame(({ clock }) => {
@@ -60,12 +60,17 @@ const Model = (props) => {
 
 useGLTF.preload(glb);
 
+const Loader = () => {
+  const { active, progress, errors, item, loaded, total } = useProgress();
+  return <html center>{progress} % loaded</html>;
+};
+
 const Scene = () => {
   return (
     <Canvas>
       <ambientLight intensity={0.5} />
       <directionalLight intensity={0.5} position={[2, 1, 3]} color="white" />
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader />}>
         <Model />
       </Suspense>
     </Canvas>
