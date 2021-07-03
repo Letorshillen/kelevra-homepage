@@ -50,13 +50,13 @@ const Gallery = () => {
         title={drawing.title}
         close={closeDrawingHandler}
       />
-      <h2 className="font-h text-8xl text-center mt-24">Gallery</h2>
+      <h2 className="font-h mt-28 text-8xl text-center">Gallery</h2>
       <div className="grid grid-cols-gallery gap-y-12 place-items-center px-24 mt-24">
         {galleryData &&
           galleryData.map((gallery, index) => (
             <div key={index} className="grid place-items-center">
               <img
-                className="w-64 h-96 transform transition duration-500 hover:scale-110"
+                className="w-64 h-96 transform transition duration-500 hover:scale-110 hover:z-10"
                 src={gallery.image.asset.url}
                 alt={gallery.title}
                 onClick={() => openDrawingHandler(index)}

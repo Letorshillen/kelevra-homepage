@@ -28,7 +28,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: { backgroundImage: ["hover", "focus"] },
+    extend: {
+      backgroundImage: ["hover", "focus"],
+      zIndex: ["hover", "active"],
+    },
   },
   plugins: [],
 };
