@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.2",
+    "@react-spring/three": "^9.2.3",
     "@react-three/drei": "^7.0.1",
     "@react-three/fiber": "^7.0.1",
     "@sanity/client": "^2.11.0",

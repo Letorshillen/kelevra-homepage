@@ -1,5 +1,4 @@
 import React from "react";
-import aboutImage from "../static/about-image.png";
 import Scene from "./threeScenes/SceneAbout";
 
 const About = () => {

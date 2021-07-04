@@ -1,11 +1,11 @@
-import React, { useRef, useState, Suspense } from "react";
+import React, { useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import glb from "../../static/pokeball.glb";
 import { useGLTF, useAnimations, useProgress } from "@react-three/drei";
 
 const Model = (props) => {
   useFrame(({ clock }) => {
-    const a = clock.getElapsedTime();
+    // const a = clock.getElapsedTime();
     // group.current.rotation.y = a;
   });
 
@@ -61,7 +61,7 @@ const Model = (props) => {
 useGLTF.preload(glb);
 
 const Loader = () => {
-  const { active, progress, errors, item, loaded, total } = useProgress();
+  const { progress } = useProgress();
   return <html center>{progress} % loaded</html>;
 };
 
